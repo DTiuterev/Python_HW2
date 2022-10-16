@@ -2,13 +2,13 @@
 import random
 
 n = int(input('Введите натуральное число N, я задам список из N элементов, заполненных числами из промежутка [-N, N]:\n '))
-sequence = [random.randint(-n, n) for i in range(0, n)]
-print(f'Последовательность: {sequence}')
+list = [random.randint(-n, n) for i in range(0, n)]
+print(f'Последовательность: {list}')
 
 print(f'Сейчас Вы введете позиции двух любых элементов (номер позиции от 1 до {n}) последовательности, а я найду произведение этих элементов.')
 
 x = int(input('Введите позицию первого элемента: '))
 y = int(input('Введите позицию второго элемента: '))
-for i in range(len(sequence)):
-    multiply = sequence[x - 1]*sequence[y - 1]
-print(f'Произведение элементов: {sequence[x - 1]} * {sequence[y - 1]} =', multiply)
+for i in range(len(list)):
+    multiply = list[x - 1]*list[y - 1]
+print(f'Произведение элементов: {list[x - 1]} * {list[y - 1]} =', multiply)
